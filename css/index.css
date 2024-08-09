@@ -55,14 +55,14 @@ h1 {
   font-style: italic;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 991px) {
   .hero {
     overflow: hidden;
   }
 
   .navbar {
     width: 70%;
-    margin: 0 40px 0 0;
+    margin: 0;
     padding: 0 0 30px 0;
   }
 
