@@ -83,4 +83,43 @@ li {
   font-size: 1.7rem;
   list-style: none;
   margin: 0 0 15px 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 650px) {
+  .picture img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .picture {
+    padding: 0 0 15px 0;
+  }
+
+  .picture img {
+    width: 90%;
+    height: auto;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 15px 0 0 0;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .description {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    justify-content: start;
+  }
+
+  .bold {
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
 }
