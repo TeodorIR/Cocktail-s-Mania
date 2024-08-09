@@ -101,13 +101,17 @@ li {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .hero {
     height: 100%;
     background-image: url(../assets/Bar\ filled\ alcohol.jpg);
     background-size: cover;
-    position: fixed;
     overflow: scroll;
+    position: fixed;
+  }
+
+  .list {
+    position: relative;
   }
 
   .container {
@@ -115,10 +119,28 @@ li {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     box-sizing: border-box;
+    position: relative;
+  }
+
+  .picture img {
+    width: 70%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
   }
 
   .container .description ul {
     box-sizing: border-box;
+    position: relative;
   }
 
   .name {
